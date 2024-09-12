@@ -30,7 +30,7 @@ accuracy = accuracy_score(Y_test, Y_pred)
 print(f"Model Accuracy: {accuracy * 100:.2f}%")
 
 # Make a prediction with input data
-input_data = [63, 0, 3, 130, 240, 0, 1, 169, 0, 0.5, 1, 0, 3]
+input_data = [63,1,3,145,233,1,0,150,0,2.3,0,0,1,1]
 input_data_np = np.array(input_data).reshape(1, -1)
 input_data_scaled = scaler.transform(input_data_np)  # Scale input data
 prediction = model.predict(input_data_scaled)
